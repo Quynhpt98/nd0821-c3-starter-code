@@ -67,7 +67,7 @@ def predict(data: InputData):
     # print(input_data)
     loaded_model = joblib.load('./model/trained_model.pkl')
     encoder = joblib.load('./model/encoder.pkl')
-    lb = joblib.load('starter/model/lb.pkl')
+    lb = joblib.load('./model/lb.pkl')
     X, _, _, _ = process_data(
             X=input_data,
             categorical_features=cats,
