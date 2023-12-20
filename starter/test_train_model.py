@@ -2,7 +2,7 @@ import pandas as pd
 from starter.ml.model import train_model, compute_model_metrics
 from starter.ml.data import process_data
 import logging
-file_path = 'starter/data/census_clean.csv'
+file_path = './data/census_clean.csv'
 # Read the CSV file into a DataFrame
 data = pd.read_csv(file_path)
 data = data[:20]
