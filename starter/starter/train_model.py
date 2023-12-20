@@ -8,7 +8,7 @@ import joblib
 # Add the necessary imports for the starter code.
 
 # Add code to load in the data.
-file_path = 'starter/data/census_clean.csv'
+file_path = './data/census_clean.csv'
 data = pd.read_csv(file_path)
 # Optional enhancement, use K-fold cross validation instead of a
 # train-test split.
@@ -28,8 +28,8 @@ cat_features = [
 X_train, y_train, encoder, lb = process_data(
     train, categorical_features=cat_features, label="salary", training=True
 )
-joblib.dump(encoder, 'starter/model/encoder.pkl')
-joblib.dump(lb, 'starter/model/lb.pkl')
+joblib.dump(encoder, './model/encoder.pkl')
+joblib.dump(lb, './model/lb.pkl')
 # Proces the test data with the process_data function.
 X_test, y_test, encoder, lb = process_data(
     test, categorical_features=cat_features, label="salary", training=True
