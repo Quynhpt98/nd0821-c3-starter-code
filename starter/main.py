@@ -65,8 +65,8 @@ def predict(data: InputData):
     ]
     input_data = pd.DataFrame(input_dict)
     # print(input_data)
-    loaded_model = joblib.load('starter/model/trained_model.pkl')
-    encoder = joblib.load('starter/model/encoder.pkl')
+    loaded_model = joblib.load('./model/trained_model.pkl')
+    encoder = joblib.load('./model/encoder.pkl')
     lb = joblib.load('starter/model/lb.pkl')
     X, _, _, _ = process_data(
             X=input_data,
