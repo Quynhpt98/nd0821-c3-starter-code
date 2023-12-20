@@ -41,8 +41,8 @@ def train_model(X_train, y_train):
 
     fbeta = fbeta_score(y_test, predictions, beta=0.5)
     print(f"fbeta: {fbeta}")
-    joblib.dump(model, 'starter/model/trained_model.pkl')
-    print("saved model: starter/model/trained_model.pkl")
+    joblib.dump(model, './model/trained_model.pkl')
+    print("saved model: ./model/trained_model.pkl")
     return model
 
 
