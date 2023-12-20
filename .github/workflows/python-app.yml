@@ -39,3 +39,4 @@ jobs:
       run: |
         cd starter
         pytest test_apis.py 
+        pytest test_train_model.py
