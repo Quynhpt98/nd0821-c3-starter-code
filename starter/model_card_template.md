@@ -14,7 +14,11 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 * Evaluation data used the rest 20% of Census 1994.
 ## Metrics
 _Please include the metrics used and your model's performance on those metrics._
-matric: fbeta: 70.1% on validation data
+matric on test dataset
+-    precision: 73.42
+-    recall: 59.39
+-    fbeta: 65.67% 
+        
 ## Ethical Considerations
 * This model is trained by public dataset and it uses to learning
 ## Caveats and Recommendations
